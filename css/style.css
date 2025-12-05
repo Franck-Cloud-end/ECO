@@ -182,6 +182,24 @@ img {
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .point {
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .point {
+    width: 100%;
+    max-width: 100%;
+    height: 240px;
+    min-height: 240px;
+  }
 }
 
 .point:hover {
@@ -798,12 +816,15 @@ ul li {
   .points-forts {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .about-image img,
   .point {
-    width: 90%;
-    height: 200px;
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+    margin: 0 auto;
   }
 
   .content-two-col {
@@ -860,4 +881,3 @@ ul li {
     grid-template-columns: 1fr;
   }
 }
-
