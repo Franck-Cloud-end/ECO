@@ -1144,6 +1144,11 @@ ul li {
     min-width: 100% !important;
     padding: 0 !important;
     margin-bottom: 5px !important;
+    text-align: center !important;
+  }
+
+  .footer-col.footer-links {
+    text-align: center !important;
   }
 
   .footer-logo {
@@ -1164,11 +1169,12 @@ ul li {
 
   .footer-heading {
     font-size: 0.85em !important;
-    margin-bottom: 4px !important;
+    margin-bottom: 6px !important;
     margin-top: 3px !important;
     font-weight: 600 !important;
   }
 
+  /* Liens horizontaux */
   .footer-list {
     margin: 0 !important;
     padding: 0 !important;
@@ -1183,6 +1189,7 @@ ul li {
     display: inline-block !important;
     margin: 0 !important;
     padding: 0 !important;
+    list-style: none !important;
   }
 
   .footer-link {
@@ -1194,34 +1201,57 @@ ul li {
     display: inline-block !important;
   }
 
-  .footer-contact {
-    font-size: 0.8em !important;
+  /* Contacts horizontaux sur mobile */
+  .footer-col.footer-contact {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 6px 8px !important;
+    gap: 4px 6px !important;
+    text-align: center !important;
   }
 
-  .contact-item {
+  .footer-col.footer-contact > h2.footer-heading {
+    flex-basis: 100% !important;
+    width: 100% !important;
+    margin-bottom: 4px !important;
+    text-align: center !important;
+    order: -1 !important;
+    margin-top: 0 !important;
+  }
+
+  .footer-col.footer-contact > p.contact-item {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 2px 3px !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
     font-size: 0.65em !important;
-    margin: 2px 4px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+
+  .footer-col.footer-contact .contact-item {
+    font-size: 0.65em !important;
+    margin: 0 !important;
     line-height: 1.2 !important;
     text-align: center !important;
     display: inline-block !important;
     width: auto !important;
-    padding: 2px 4px !important;
+    padding: 2px 3px !important;
     white-space: nowrap !important;
   }
 
-  .contact-item i {
+  .footer-col.footer-contact .contact-item i {
     font-size: 0.7em !important;
     margin-right: 2px !important;
   }
 
-  .contact-item a {
+  .footer-col.footer-contact .contact-item a {
     font-size: 0.65em !important;
+    white-space: nowrap !important;
   }
 
   .footer-divider {
